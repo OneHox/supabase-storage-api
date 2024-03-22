@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  megapy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlvc2Jvc3JkbHVmZ3hyc2htdXFyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxMTA3ODg3MCwiZXhwIjoyMDI2NjU0ODcwfQ.6qzxwcF-yMX7aId8Uhn856-ro_gqvS_yDDnjOogD-9U
+        - SUPABASE_URL=https://yosbosrdlufgxrshmuqr.supabase.co
+        - ASSETS_PATH=/incest
+        - BUCKET_NAME=sample
+    volumes:
+      - .:/app
